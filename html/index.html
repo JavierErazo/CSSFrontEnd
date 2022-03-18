@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/vacuna.js"></script>
+        <title>Vacunación CDMX</title>
+    </head>
+    <body>
+        <!---BARRA MENU-->
+        <nav id="nav_container">
+            <span id="vaccination_span">RE-VACÚNATE</span>
+            <ul>
+                <li><a class="navLink" href="basededatos.html">Base de Datos</a></li>
+                <li><a class="navLink" href="educacion.html">Educación</a></li>
+                <li><a class="navLink" href="noticias.html">Noticias</a></li>
+                <li><a class="navLink" href="regulacion.html">Regulación</a></li>
+                <li><button id="hoax_buster_button"><a href="cazamentiras.html">Caza Mentiras</a></button></li>
+            </ul>
+        </nav>
+
+        <!--PRIMERA SECCION-->
+        
+        <section id="first_section_container">
+            <article id="article_one">
+                <div id="triangle_left_container">
+                    <div id="triangle_left"></div>
+                </div>
+                <div id="triangle_right_container">
+                    <div id="triangle_right"></div>
+                </div>
+                <h1 id="header_one">Combate el Virus</h1>
+                <p id="paragraph_one">¿Extrañas salir de fiesta? ¿Quieres ver a tus
+                    amigos y no precisamente por ZOOM? ¡Aplicate la dosis de
+                    vacunación! 
+                  </p>
+                <div id="icons_container">
+                    <img src="../images/shield_icon.png" id="best_protection_icon" class="yellowIcon smallIcon" alt="icono mejor proteccion">
+                    <span id="best_protection_span">La Mejor Protección</span>
+                    <img src="../images/star_icon.png" id="selected_vaccines_icon" class="yellowIcon smallIcon" alt="icono vacunas selectas">
+                    <span id="selected_vaccines_span">Vacunas Selectas</span>
+                    
+                </div>
+                
+                <form action="schedule.js" id="schedule_form">      
+                    <div id="form_header">
+                        <img src="../images/clock_icon.png" id="schedule_vaccinations_icon" class="smallIcon" alt="icono agenda de vacuna">
+                        <span id="schedule_vaccinations_span">Agenda tu cita ahora:</span>
+                    </div>
+                    <div id="form_item">
+                        <div id="pinpoint_item">
+                            <img src="../images/pinpoint_icon.png" id="location_icon" class="smallIcon" aria-hidden="true" alt="icono de ubicacion">
+                            <label for="location_select" id="location_label">Ubicación</label>
+                            
+                            <select name="location" id="location_select">
+                                <option disabled selected>Elige tu alcaldía...</option>
+                                <option value="Alvaro Obregón">Álvaro Obregón</option>
+                                <option value="Azcapotzalco">Azcapotzalco</option>
+                                <option value="Benito Juarez">Benito Juárez</option>
+                                <option value="Coyoacán">Coyoacán</option>
+                                <option value="Cuajimalpa">Cuajimalpa</option>
+                                <option value="Cuauhtémoc">Cuauhtémoc</option>
+                                <option value="Gustavo A. Madero">Gustavo A. Madero</option>
+                                <option value="Iztacalco">Iztacalco</option>
+                                <option value="Iztapalapa">Iztapalapa</option>
+                                <option value="Magdalena Contreras">Magdalena Contreras</option>
+                                <option value="Miguel Hidalgo">Miguel Hidalgo</option>
+                                <option value="Milpa Alta">Milpa Alta</option>
+                                <option value="Tláhuac">Tláhuac</option>
+                                <option value="Tlalpan">Tlalpan</option>
+                                <option value="Venustiano Carranza">Venustiano Carranza</option>
+                                <option value="Xochimilco">Xochimilco</option>
+                            </select>    
+                        </div>
+                        <div id="calendar_item">
+                            <img src="../images/calendar_icon.png" id="date_icon" class="smallIcon" aria-hidden="true" alt="icono de calendario">
+                            <label for="date_input" id="date_label">Fecha</label>
+                            <input type="date" id="date_input">
+                        </div>
+                        <div id="vaccine_item">
+                            <img src="../images/vaccine_icon.png" id="vaccine_icon" class="smallIcon" aria-hidden="true" alt="icono seleccion de vacuna">
+                            <label for="vaccine_select" id="vaccine_label">Tipo de Vacuna</label>
+                            <select name="vaccine" id="vaccine_select">
+                                <option disabled selected>Elige la vacuna...</option>
+                                <option value="Astra Zeneca">Astra Zeneca</option>
+                                <option value="Sinovac">Sinovac</option>
+                                <option value="Pfizer">Pfizer</option>
+                                <option value="Moderna">Moderna</option>
+                            </select>
+                        </div>
+                        <input id="submit_button" type="submit" value="Agendar">
+                    </div>
+                </form>
+            </article>
+            <div id="triangle_two_container">
+                <div id="triangle_two"></div>
+            </div>
+            <img src="../images/image_one.png" id="image_one">
+        </section>
+        <!--SEGUNDA SECCION-->
+        <section id="second_section_container" class="sectionContainer">
+
+            <div class="vaccine_brands">
+                <img src="../images/astra.png" id="astra_img">
+                <img src="../images/sinovac.png" id="sinovac_img">
+                <img src="../images/pfizer.png" id="pfizer_img">
+                <img src="../images/moderna.png" id="moderna_img">
+            </div>
+            <article id="article_two"">
+                <h2 id="header_two" class="header_left">¿Y eso para qué o qué?</h2>
+                <p id="paragraph_two" class="paragraph">Vacunarte no cuesta nada. No vacunarte
+                    podría costarte todo. Checáte algunos de los beneficios que nos da
+                la vacuna.</p>
+            </article>
+            <section id="graphic_one" class="graphic_right">
+                <div class="upper_triangle_right"></div>
+                <hr>
+                <div class="lower_triangle_right"></div>
+            </section>
+            <section id="benefits_vaccine">
+                <div class="benefits_item">
+                    <img src="../images/minimize_icon.png" class="mediumIcon">
+                    <h3>¡Ya basta<br>
+                    COVID-19!</h3>
+                    <p>Esta comprobado<br>
+                        que vacunarse ayuda a<br>
+                        prevenir que te contagies de<br>
+                        Coronavirus.</p>
+                </div>
+                <div class="benefits_item">
+                    <img src="../images/shield_blue_icon.png" class="mediumIcon">
+                    <h3>¡Anticuerpos<br>
+                    a mí</h3>
+                    <p>La vacuna aumenta<br>
+                        la respuesta de los anticuerpos<br>
+                        para nuestro sistema inmune.
+                    </p>
+                </div>
+                <div class="benefits_item">
+                    <img src="../images/people_icon.png" class="mediumIcon">
+                    <h3>Me protejo,<br>
+                    te protejo</h3>
+                    <p>Con la vacuna nos protegemos<br>
+                        y al mismo tiempo<br>
+                        protegemos a los demás.<br>
+                        ¡Al 2x1, papá!</p>
+                    </div>
+                <div class="benefits_item">
+                    <img src="../images/immunity_icon.png" class="mediumIcon">
+                    <h3>Todos para uno<br>
+                    y uno para todos</h3>
+                    <p>La vacuna provee<br>
+                        algo llamado inmunidad de grupo.<br>
+                        ¡Entre más, mejor!</p>
+                    </div>
+            </section>
+        </section>
+        <section id="third_section_container">
+            <section id="graphic_two" class="graphic_left">
+                <div id="upper_triangle_left" class="upper_triangle_left"></div>
+                <hr>
+                <div id="lower_triangle_left" class="lower_triangle_left"></div>
+            </section>
+            <article id="article_three">
+                <h2 id="header_three" class="header_right">¿Y qué hay que hacer?</h2>
+                <p id="paragraph_three" class="paragraph">
+                    La efectividad de la vacuna es proporcional a la fuerza
+                    del sistema inmune de tu cuerpo. Es decir que hay ciertas medidas
+                    que ayudan a la vacuna a hacer su chamba. ¡Mexicano precavido
+                    vale por dos!</p>
+                <div id="dropdown_container">
+                    <div class="dropdown_item">
+                        <div class="dropdown_title">
+                            <img src="../images/alcohol_icon.png" id="alcohol_icon" class="smallIcon" alt="icono de evitar alcohol">
+                            <h4>Evitar bebidas alcohólicas</h4>
+                            <img src="../images/down.png" class="smallIcon arrowIcon down" onclick="show(this)">
+                        </div>
+                            <p>Tomárse unas copitas o la caguama banquetera podría afectar de diversas
+                                maneras si es que te piensas vacunar. Que tu sed sea de bienestar. 
+                            </p>
+                    </div>
+                    <div class="dropdown_item">
+                        <div     class="dropdown_title">
+                            <img src="../images/stress_icon.png" id="stress_icon" class="smallIcon" alt="icono de evitar alcohol">
+                            <h4>Evitar estrés</h4>
+                            <img src="../images/down.png" class="smallIcon arrowIcon down" onclick="show(this)">
+                        </div>   
+                            <p>El estrés tiene un efecto profundo en el trabajo de la inmunidad.
+                                Además, el estrés prolongado puede incrementar la producción
+                                de cortisol y el estrés oxidativo en el cuerpo.</p>    
+                    </div>
+                    <div class="dropdown_item">
+                        <div class="dropdown_title">
+                            <img src="../images/food_icon.png" id="food_icon" class="smallIcon" alt="icono de evitar alcohol">
+                            <h4>Comer saludablemente</h4>
+                            <img src="../images/down.png" class="smallIcon arrowIcon down" onclick="show(this)">
+                        </div>
+                        <p>Comer saludablemente antes y después de la vacuna ayudará a evitar mareos y otros
+                            efectos no deseados. ¡Los taquitos pueden esperar!
+                        </p>
+                    </div>
+                    <div class="dropdown_item">
+                        <div class="dropdown_title">
+                            <img src="../images/sleep_icon.png" id="sleep_icon" class="smallIcon" alt="icono de evitar alcohol">
+                            <h4>Dormir bien</h4>
+                            <img src="../images/down.png" class="smallIcon arrowIcon down" onclick="show(this)">
+                        </div>
+                        <p>Es importante dormir bien antes de vacunarse, para estar bien descansados
+                            y tener la fuerza suficiente para rendir ese día.
+                        </p>
+                        </div>
+                    <div class="dropdown_item">
+                        <div class="dropdown_title">    
+                            <img src="../images/health_icon.png" id="health_icon" class="smallIcon" alt="icono de evitar alcohol">
+                            <h4>Hacer ejercicio</h4>
+                            <img src="../images/down.png" class="smallIcon arrowIcon down" onclick="show(this)">
+                        </div>
+                            <p>Hacer ejercicio da muchos beneficios en muchos aspectos. Se recomienda hacerlo
+                                antes de la vacuna y no después.
+                        </p>
+                        </div>
+                </div>
+            </article>
+            <div id="div_img_two">    
+                <img src="../images/image_two.png" id="image_two">
+            </div>
+            </section>
+        
+            <section id="fourth_section_container">
+                <article id="article_four">
+                    <h2 id="header_four" class="header">Contacto de emergencia</h2>
+                    <p id="paragraph_four" class="paragraph">
+                        ¿Te has sentido mal y crees que es COVID-19? ¿Alguien de tu
+                        familia tiene sintomas? No te preocupes, te tenemos cubierto.
+                        Utiliza cualquiera de los contactos de abajo y estaremos en contacto
+                        contigo a la brevedad:</p>
+                    <div id="contact_container">
+                        <div class="contact_col">
+                            <div class="contact_item">
+                                <div class="contact_header">
+                                    <img src="../images/call_icon.png" id="call_icon" class="mediumIcon" alt="icono de llamada">
+                                    <div class="contact_info">
+                                        <span class="contact_info_item contact_title">Llamada</span>
+                                        <span class="contact_info_item contact_number">021.123.145.14</span>
+                                    </div>        
+                                </div>
+                                <button class="contact_button">Llamar</button>
+                            </div>
+                            <div class="contact_item">
+                                <div class="contact_header">
+                                    <img src="../images/video_icon.png" id="video_icon" class="mediumIcon" alt="icono de video">
+                                    <div class="contact_info">
+                                        <span class="contact_info_item contact_title">Video</span>
+                                        <span class="contact_info_item contact_number">021.123.145.14</span>
+                                    </div>
+                                </div>
+                                <button class="contact_button">Llamar</button>
+                            </div>
+                        </div>
+                        <div class="contact_col">
+                            
+                            <div class="contact_item">
+                                <div class="contact_header">
+                                    <img src="../images/message_icon.png" id="mensaje_icon" class="mediumIcon" alt="icono de mensaje">
+                                    <div class="contact_info">
+                                        <span class="contact_info_item contact_title">Mensaje</span>
+                                        <span class="contact_info_item contact_number">021.123.145.14</span>
+                                    </div>
+                                </div>
+                                <button class="contact_button">Mensajear</button>
+                            </div>
+                            <div class="contact_item">
+                                <div class="contact_header">
+                                    <img src="../images/chat_icon.png" id="chat_icon" class="mediumIcon" alt="icono de chat">
+                                    <div class="contact_info">
+                                        <span class="contact_info_item contact_title">Chatea</span>
+                                        <span class="contact_info_item contact_number">021.123.145.14</span>
+                                    </div>
+                                </div>
+                                <button class="contact_button">Chatear</button>
+                            </div>    
+                        </div>  
+                    </div>
+                </article>
+                <section id="graphic_three">
+                    <div id="upper_triangle_left" class="upper_triangle_right"></div>
+                    <hr>
+                    <div id="lower_triangle_left" class="lower_triangle_right"></div>
+                </section>     
+                <div id="div_img_three">    
+                    <img src="../images/image_three.png" id="image_three">
+                </div>
+            </section>
+        </section>
+        <footer>
+            <div class="upper_footer">
+                <div class="upper_left">
+                    <h3>RE-VACÚNATE</h3>
+                    <p>Nuestra misión es ayudar<br>a que todos se apliquen<br>el refuerzo de vacunación.</p>
+                </div>
+                <div class="upper_right">
+                    <ul class="list_container">
+                        <li class="footer_header" >Acerca</li>
+                        <li><a class="footer_link" href="sobrenosotros.html">Sobre nosotros</a></li>
+                        <li><a class="footer_link" href="caracteristicas.html">Características</a></li>
+                        <li><a class="footer_link" href="noticias.html">Noticias & Blog</a></li>
+                    </ul>
+                    <ul class="list_container">
+                        <li class="footer_header">Compañia</li>
+                        <li><a class="footer_link" href="trabajo.html">¿Como trabajamos?</a></li>
+                        <li><a class="footer_link" href="capital.html">Capital</a></li>
+                        <li><a class="footer_link" href="seguridad.html">Seguridad</a></li>
+                    </ul>
+                    <ul class="list_container">
+                        <li class="footer_header">Soporte</li>
+                        <li><a class="footer_link" href="faqs.html">FAQs</a></li>
+                        <li><a class="footer_link" href="soporte.html">Centro de Soporte</a></li>
+                        <li><a class="footer_link" href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lower_footer">
+                <div class="lower_left">
+                    <span >@2022 RE-VACÚNATE. Todos los derechos reservados.</span>
+                </div>
+                <div class="triangle_footer"></div>
+                <div class="lower_right">
+                    <a href="terminos.html" class="footer_link">Términos y Acuerdos</a>
+                    <a href="privacidad.html" class="footer_link">Política de Privacidad</a>
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
